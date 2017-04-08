@@ -1,0 +1,16 @@
+{
+    "name": "watchwod/querysugar",
+    "description": "Adding some syntactic sugar to Eloquent's query builder",
+    "authors": [
+        {
+            "name": "John Wood",
+            "email": "johnathon.wood@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "watchwod\\querysugar\\": "src"
+        }
+    }
+}
