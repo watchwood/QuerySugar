@@ -14,32 +14,32 @@ For convenience, you can have your User model extend from the included `watchwoo
 
 ### Equality
 
-eq($column, $value)
-equals($column, $value)
-neq($column, $value)
-notEquals($column, $value)
+* eq($column, $value)
+* equals($column, $value)
+* neq($column, $value)
+* notEquals($column, $value)
 
 ### Relativity
 
-gt($column, $value)
-gte($column, $value)
-greater($column, $value)
-greaterEquals($column, $value)
+* gt($column, $value)
+* gte($column, $value)
+* greater($column, $value)
+* greaterEquals($column, $value)
 
-lt($column, $value)
-lte($column, $value)
-lesser($column, $value)
-lesserEquals($column, $value)
+* lt($column, $value)
+* lte($column, $value)
+* lesser($column, $value)
+* lesserEquals($column, $value)
 
 
 ### Strings
 
-contains($column, $value)
-like($column, $value)
-starts($column, $value)
-startsWith($column, $value)
-ends($column, $value)
-endsWith($column, $value)
+* contains($column, $value)
+* like($column, $value)
+* starts($column, $value)
+* startsWith($column, $value)
+* ends($column, $value)
+* endsWith($column, $value)
 
 ## Contributing
 
