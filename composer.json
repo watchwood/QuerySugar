@@ -1,5 +1,5 @@
 {
-    "name": "watchwod/QuerySugar",
+    "name": "watchwood/querysugar",
     "description": "Adding some syntactic sugar to Eloquent's query builder",
     "authors": [
         {
