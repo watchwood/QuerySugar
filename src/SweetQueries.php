@@ -73,6 +73,18 @@ trait SweetQueries
      * @param  mixed  $value
      * @return $this
      */
+    public function greaterThan($column, $value)
+    {
+        return $this->gt($column, $value);
+    }
+	
+	/**
+     * Return a query checking for a greater than a value
+     *
+     * @param  string $column
+     * @param  mixed  $value
+     * @return $this
+     */
     public function greater($column, $value)
     {
         return $this->gt($column, $value);
@@ -126,6 +138,18 @@ trait SweetQueries
         return $this->lt($column, $value);
     }
 	
+	/**
+     * Return a query checking for a lesser than a value
+     *
+     * @param  string $column
+     * @param  mixed  $value
+     * @return $this
+     */
+    public function lessThan($column, $value)
+    {
+        return $this->lt($column, $value);
+    }
+	
 	
 	/**
      * Return a query checking for a lesser/equals than a value
@@ -161,7 +185,7 @@ trait SweetQueries
      */
     public function contains($column, $value)
     {
-        return $this->where($column, "LIKE", '%'.$value.'%');
+        return $this->where($column, "like", '%'.$value.'%');
     }
 	
 	/**
@@ -173,7 +197,7 @@ trait SweetQueries
      */
     public function like($column, $value)
     {
-        return $this->where($column, "LIKE", '%'.$value.'%');
+        return $this->where($column, "like", '%'.$value.'%');
     }
 	
 	/**
@@ -185,7 +209,7 @@ trait SweetQueries
      */
     public function starts($column, $value)
     {
-        return $this->where($column, "LIKE", $value.'%');
+        return $this->where($column, "like", $value.'%');
     }
 	
 	/**
@@ -197,7 +221,7 @@ trait SweetQueries
      */
     public function ends($column, $value)
     {
-        return $this->where($column, "LIKE", '%'.$value);
+        return $this->where($column, "like", '%'.$value);
     }
 	
 	/**
@@ -223,9 +247,4 @@ trait SweetQueries
     {
         return $this->ends($column, $value);
     }
-	
-	
-	
-
-	
 }

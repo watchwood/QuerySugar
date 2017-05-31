@@ -24,11 +24,13 @@ For convenience, you can have your User model extend from the included `watchwoo
 * gt($column, $value)
 * gte($column, $value)
 * greater($column, $value)
+* greaterThan($column, $value)
 * greaterEquals($column, $value)
 
 * lt($column, $value)
 * lte($column, $value)
 * lesser($column, $value)
+* lessThan($column, $value)
 * lesserEquals($column, $value)
 
 
